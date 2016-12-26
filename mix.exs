@@ -2,11 +2,13 @@ defmodule PigLatin.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :piglatin,
+    [app: :elixirway,
      version: "0.1.0",
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     description: description(),
+     package: package(),
      deps: deps()]
   end
 
@@ -28,5 +30,20 @@ defmodule PigLatin.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     []
+  end
+
+  defp description do
+    """
+    A piglatin translator written in Elixir
+    """
+  end
+
+  defp package do
+    [# These are the default files included in the package
+     name: :postgrex,
+     files: ["lib", "mix.exs", "README.md", "LICENSE.txt"],
+     maintainers: ["Brian Kelly"],
+     licenses: ["MIT"],
+     links: %{"GitHub" => "https://github.com/spilth/elixirway"}]
   end
 end
