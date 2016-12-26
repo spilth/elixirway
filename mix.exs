@@ -40,7 +40,7 @@ defmodule PigLatin.Mixfile do
 
   defp package do
     [# These are the default files included in the package
-     name: :postgrex,
+     name: :elixirway,
      files: ["lib", "mix.exs", "README.md", "LICENSE.txt"],
      maintainers: ["Brian Kelly"],
      licenses: ["MIT"],
