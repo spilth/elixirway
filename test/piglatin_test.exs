@@ -7,7 +7,8 @@ defmodule PigLatinTest do
     assert PigLatin.translate("orange") == "orangeway"
   end
 
-  test "word starting with a consanant" do
+  test "word starting with a single consonant" do
     assert PigLatin.translate("computer") == "omputercay"
+    assert PigLatin.translate("coding") == "odingcay"
   end
 end
