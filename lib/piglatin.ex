@@ -43,7 +43,7 @@ defmodule PigLatin do
   end
 
   @doc """
-  Finds the index of the first vowel in a weord.
+  Finds the index of the first vowel in a word.
 
   Return the index of the first vowel or nil if none found.
 

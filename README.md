@@ -6,11 +6,11 @@ Piglatin translator written in Elixir
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
 
-  1. Add `piglatin` to your list of dependencies in `mix.exs`:
+  1. Add `elixirway` to your list of dependencies in `mix.exs`:
 
     ```elixir
     def deps do
-      [{:piglatin, "~> 0.1.0"}]
+      [{:elixirway, "~> 0.1.3"}]
     end
     ```
 
