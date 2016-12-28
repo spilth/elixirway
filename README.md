@@ -21,3 +21,16 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
       [applications: [:piglatin]]
     end
     ```
+## Development
+
+To check out and work on the project:
+
+```bash
+$ brew install elixir
+$ git clone git@github.com:spilth/elixirway.git
+$ cd elixirway
+$ mix deps.get
+$ mix test
+$ mix docs
+$ mix hex.publish
+```
