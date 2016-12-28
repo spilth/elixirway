@@ -21,6 +21,7 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
       [applications: [:piglatin]]
     end
     ```
+
 ## Development
 
 To check out and work on the project:
