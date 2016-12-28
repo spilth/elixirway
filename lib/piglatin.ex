@@ -20,7 +20,14 @@ defmodule PigLatin do
     else
         first_vowel_index = get_first_vowel_index(word)
         first_part = String.slice(word, 0..first_vowel_index-1)
+        first_part = String.downcase(first_part)
+
         rest_of_word = String.slice(word, first_vowel_index..-1)
+        rest_of_word =
+            case (capitalized(word)) do
+              true -> String.capitalize(rest_of_word)
+              false -> rest_of_word
+            end
 
         rest_of_word <> first_part <> "ay"
     end
@@ -61,5 +68,11 @@ defmodule PigLatin do
             character
         ) end
     )
+  end
+
+  def capitalized(word) do
+    first_character = String.first(word)
+
+    String.upcase(first_character) == first_character
   end
 end
